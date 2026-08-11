@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Definition for linear gradient to give a digital feel -->
+  <defs>
+    <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" />
+      <stop offset="100%" stop-color="#7000ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left abstract drumstick / digital node -->
+  <path d="M 35 25 L 35 60 A 10 10 0 1 0 45 70 L 45 35 A 5 5 0 0 0 35 25 Z" fill="url(#cyberGradient)" />
+  
+  <!-- Right abstract drumstick / digital node -->
+  <path d="M 65 25 L 65 60 A 10 10 0 1 1 55 70 L 55 35 A 5 5 0 0 1 65 25 Z" fill="url(#cyberGradient)" />
+
+  <!-- Center digital connection / soundwave pulse -->
+  <circle cx="50" cy="50" r="5" fill="#00ffcc" />
+  <circle cx="50" cy="50" r="12" fill="none" stroke="#7000ff" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <!-- Outer drum rim / digital ring -->
+  <circle cx="50" cy="50" r="40" fill="none" stroke="url(#cyberGradient)" stroke-width="3" />
+</svg>

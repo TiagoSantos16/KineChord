@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KineChord — Air Instrument</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <h1>KineChord</h1>
+        <p class="tagline">Air instrument · camera preview</p>
+      </div>
+      <div class="status" id="status" aria-live="polite">
+        <span class="dot"></span>
+        <span id="statusText">Standby</span>
+      </div>
+    </header>
+
+    <section class="stage" id="stage">
+      <video id="video" playsinline muted></video>
+      <canvas id="canvas"></canvas>
+      <div class="scene-hint">V1 - Air Instrument Preview</div>
+    </section>
+
+    <footer>
+      <button id="startBtn">Start Camera</button>
+      <label class="engine">Engine
+        <span class="seg" role="group" aria-label="Compute engine">
+          <button type="button" id="engineCpu" class="seg-btn">CPU</button>
+          <button type="button" id="engineGpu" class="seg-btn">GPU</button>
+        </span>
+      </label>
+      <label class="volume" for="volume">Volume
+        <input id="volume" type="range" min="0" max="1" step="0.05" value="0.8" />
+      </label>
+      <p class="hint">Strike the pads like drums with your index fingertips</p>
+    </footer>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
